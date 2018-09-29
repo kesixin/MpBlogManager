@@ -30,7 +30,6 @@
                             <th>作者</th>
                             <th>标题</th>
                             <th>阅读数</th>
-                            <th>分类</th>
                             <th>时间</th>
                             <th>操作</th>
                         </tr>
@@ -48,14 +47,6 @@
                                     </td>
                                     <td>{{ $articlePresenter->formatTitle($value->title) }}</td>
                                     <td>{{ $value->read_counts }}</td>
-                                    <td>
-                                        <?php
-                                            if(!empty($articles[$article]->category->name)){
-                                                echo $articles[$article]->category->name;
-                                            }
-
-                                        ?>
-                                    </td>
                                     <td>{{ $value->createdAt }}</td>
                                     <td>
                                         <a href='{{ route("backend.article.mini-edit", ["id" => $value->objectId]) }}' class='btn btn-info btn-xs'>
