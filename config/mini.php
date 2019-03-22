@@ -30,6 +30,12 @@
             [
                 'backend.user.user-index' => [
                     'icon' => 'fa fa-user',
+                    'name' => '轮播图列表'
+                ]
+            ],
+            [
+                'backend.user.user-index' => [
+                    'icon' => 'fa fa-user',
                     'name' => '用户列表'
                 ]
             ],
